@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Частые ошибки начинающих программистов | Кодстарт</title>
+<meta name="description" content="Разбор частых ошибок на Python, JavaScript, C# и Swift: причины возникновения и способы исправления.">
+<link rel="canonical" href="https://loskich.github.io/kodstart/catalog/reference/errors/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Кодстарт">
+<meta property="og:title" content="Частые ошибки начинающих программистов | Кодстарт">
+<meta property="og:description" content="Разбор частых ошибок на Python, JavaScript, C# и Swift: причины возникновения и способы исправления.">
+<meta property="og:url" content="https://loskich.github.io/kodstart/catalog/reference/errors/">
+<meta name="theme-color" content="#1d4ed8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d4ed8'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='white' font-family='monospace'%3E%7B%7D%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://loskich.github.io/kodstart/"}, {"@type": "ListItem", "position": 2, "name": "Каталог курсов", "item": "https://loskich.github.io/kodstart/catalog/"}, {"@type": "ListItem", "position": 3, "name": "Справочник / Полезное", "item": "https://loskich.github.io/kodstart/catalog/reference/"}, {"@type": "ListItem", "position": 4, "name": "Частые ошибки", "item": "https://loskich.github.io/kodstart/catalog/reference/errors/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#content">Перейти к содержимому</a>
+<header class="site-header">
+  <div class="container header-row">
+    <a class="logo" href="../../../"><span class="logo-mark">{ }</span> Кодстарт</a>
+    <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav aria-label="Главное меню"><ul class="menu" id="menu"><li class="has-sub mega"><a href="../../../catalog/">Каталог курсов</a><button class="sub-toggle" type="button" aria-label="Открыть подменю" aria-expanded="false">▾</button><div class="sub mega-grid"><div class="col"><a class="col-title" href="../../../catalog/programming/">Программирование</a><ul><li><a href="../../../catalog/programming/python/">Python</a></li><li><a href="../../../catalog/programming/csharp/">C#</a></li><li><a href="../../../catalog/programming/javascript/">JavaScript</a></li><li><a href="../../../catalog/programming/swift/">Swift</a></li><li><a href="../../../catalog/programming/web/">Web-разработка</a></li></ul></div><div class="col"><a class="col-title" href="../../../catalog/levels/">По уровню</a><ul><li><a href="../../../catalog/levels/beginner/">Начальный</a></li><li><a href="../../../catalog/levels/intermediate/">Средний</a></li><li><a href="../../../catalog/levels/advanced/">Продвинутый</a></li></ul></div><div class="col"><a class="col-title" href="../../../catalog/practice/">Практика</a><ul><li><a href="../../../catalog/practice/tasks/">Практические задания</a></li><li><a href="../../../catalog/practice/tests/">Тесты</a></li><li><a href="../../../catalog/practice/mini-projects/">Мини-проекты</a></li></ul></div><div class="col"><a class="col-title" href="../../../catalog/reference/">Справочник / Полезное</a><ul><li><a href="../../../catalog/reference/syntax/">Синтаксис языков</a></li><li><a href="../../../catalog/reference/examples/">Примеры кода</a></li><li><a href="../../../catalog/reference/errors/">Частые ошибки</a></li><li><a href="../../../catalog/reference/articles/">Статьи</a></li></ul></div></div></li><li class="has-sub"><a href="../../../about/">О нас</a><button class="sub-toggle" type="button" aria-label="Открыть подменю" aria-expanded="false">▾</button><ul class="sub"><li><a href="../../../about/project/">Описание проекта</a></li><li><a href="../../../about/goals/">Цели и задачи</a></li><li><a href="../../../about/authors/">Авторы материалов</a></li></ul></li><li><a href="../../../contacts/">Контакты</a></li><li><a href="../../../faq/">FAQ</a></li></ul></nav>
+  </div>
+</header>
+<main id="content">
+<div class="container">
+<nav class="crumbs" aria-label="Хлебные крошки"><ol><li><a href="../../../">Главная</a></li><li><a href="../../../catalog/">Каталог курсов</a></li><li><a href="../../../catalog/reference/">Справочник / Полезное</a></li><li aria-current="page">Частые ошибки</li></ol></nav>
+<h1>Частые ошибки начинающих программистов</h1><p class="lead">Что означает сообщение об ошибке и как её исправить.</p><article class="task"><h3>IndentationError</h3><p><span class="badge">Python</span></p><p>Неверные отступы: тело функции или условия должно быть сдвинуто.</p><div class="grid2"><div><h4>Ошибка</h4><pre><code class="lang-python">def f():
+print(1)</code></pre></div><div><h4>Исправление</h4><pre><code class="lang-python">def f():
+    print(1)</code></pre></div></div></article><article class="task"><h3>TypeError: can only concatenate str</h3><p><span class="badge">Python</span></p><p>Строку складывают с числом.</p><div class="grid2"><div><h4>Ошибка</h4><pre><code class="lang-python">print(&quot;Возраст: &quot; + 20)</code></pre></div><div><h4>Исправление</h4><pre><code class="lang-python">print(&quot;Возраст: &quot; + str(20))</code></pre></div></div></article><article class="task"><h3>NameError</h3><p><span class="badge">Python</span></p><p>Переменная используется до объявления или с опечаткой в имени.</p><div class="grid2"><div><h4>Ошибка</h4><pre><code class="lang-python">print(total)</code></pre></div><div><h4>Исправление</h4><pre><code class="lang-python">total = 0
+print(total)</code></pre></div></div></article><article class="task"><h3>Cannot read properties of undefined</h3><p><span class="badge">JavaScript</span></p><p>Обращение к свойству несуществующего объекта.</p><div class="grid2"><div><h4>Ошибка</h4><pre><code class="lang-javascript">const user = {};
+console.log(user.address.city);</code></pre></div><div><h4>Исправление</h4><pre><code class="lang-javascript">const user = {};
+console.log(user.address?.city);</code></pre></div></div></article><article class="task"><h3>Путаница == и ===</h3><p><span class="badge">JavaScript</span></p><p>Оператор == приводит типы и даёт неожиданные результаты.</p><div class="grid2"><div><h4>Ошибка</h4><pre><code class="lang-javascript">console.log(0 == &quot;&quot;);   // true</code></pre></div><div><h4>Исправление</h4><pre><code class="lang-javascript">console.log(0 === &quot;&quot;);  // false</code></pre></div></div></article><article class="task"><h3>NullReferenceException</h3><p><span class="badge">C#</span></p><p>Обращение к члену объекта, равного null.</p><div class="grid2"><div><h4>Ошибка</h4><pre><code class="lang-csharp">string s = null;
+Console.WriteLine(s.Length);</code></pre></div><div><h4>Исправление</h4><pre><code class="lang-csharp">string? s = null;
+Console.WriteLine(s?.Length ?? 0);</code></pre></div></div></article><article class="task"><h3>CS0103: имя не существует в текущем контексте</h3><p><span class="badge">C#</span></p><p>Переменная не объявлена или объявлена в другой области видимости.</p><div class="grid2"><div><h4>Ошибка</h4><pre><code class="lang-csharp">Console.WriteLine(count);</code></pre></div><div><h4>Исправление</h4><pre><code class="lang-csharp">int count = 0;
+Console.WriteLine(count);</code></pre></div></div></article><article class="task"><h3>Unexpectedly found nil</h3><p><span class="badge">Swift</span></p><p>Принудительное извлечение (!) значения, равного nil.</p><div class="grid2"><div><h4>Ошибка</h4><pre><code class="lang-swift">let n: Int? = nil
+print(n!)</code></pre></div><div><h4>Исправление</h4><pre><code class="lang-swift">let n: Int? = nil
+if let n = n { print(n) }</code></pre></div></div></article>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-row">
+    <div>
+      <strong>Кодстарт</strong>
+      <p>Образовательный ресурс по программированию: курсы, практика, тесты и справочник.</p>
+      <p class="muted">Учебный проект, выполненный в рамках лабораторной работы №2 (ТулГУ).</p>
+    </div>
+    <ul>
+      <li><a href="../../../catalog/">Каталог курсов</a></li>
+      <li><a href="../../../about/">О нас</a></li>
+      <li><a href="../../../contacts/">Контакты</a></li>
+      <li><a href="../../../faq/">FAQ</a></li>
+    </ul>
+    <ul>
+      <li><a href="../../../privacy/">Политика конфиденциальности</a></li>
+      <li><a href="../../../terms/">Пользовательское соглашение</a></li>
+      <li><a href="../../../sitemap/">Карта сайта</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="../../../assets/site.js" defer></script>
+
+</body>
+</html>

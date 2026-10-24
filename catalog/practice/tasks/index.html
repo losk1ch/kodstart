@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Практические задания по программированию | Кодстарт</title>
+<meta name="description" content="Практические задания по Python, C#, JavaScript и Swift с условиями и решениями. Задачи для начинающих и продвинутых.">
+<link rel="canonical" href="https://loskich.github.io/kodstart/catalog/practice/tasks/">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ru_RU">
+<meta property="og:site_name" content="Кодстарт">
+<meta property="og:title" content="Практические задания по программированию | Кодстарт">
+<meta property="og:description" content="Практические задания по Python, C#, JavaScript и Swift с условиями и решениями. Задачи для начинающих и продвинутых.">
+<meta property="og:url" content="https://loskich.github.io/kodstart/catalog/practice/tasks/">
+<meta name="theme-color" content="#1d4ed8">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d4ed8'/%3E%3Ctext x='32' y='43' font-size='30' text-anchor='middle' fill='white' font-family='monospace'%3E%7B%7D%3C/text%3E%3C/svg%3E">
+<link rel="stylesheet" href="../../../assets/style.css">
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Главная", "item": "https://loskich.github.io/kodstart/"}, {"@type": "ListItem", "position": 2, "name": "Каталог курсов", "item": "https://loskich.github.io/kodstart/catalog/"}, {"@type": "ListItem", "position": 3, "name": "Практика", "item": "https://loskich.github.io/kodstart/catalog/practice/"}, {"@type": "ListItem", "position": 4, "name": "Практические задания", "item": "https://loskich.github.io/kodstart/catalog/practice/tasks/"}]}</script>
+</head>
+<body>
+<a class="skip" href="#content">Перейти к содержимому</a>
+<header class="site-header">
+  <div class="container header-row">
+    <a class="logo" href="../../../"><span class="logo-mark">{ }</span> Кодстарт</a>
+    <button class="burger" type="button" aria-label="Меню" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav aria-label="Главное меню"><ul class="menu" id="menu"><li class="has-sub mega"><a href="../../../catalog/">Каталог курсов</a><button class="sub-toggle" type="button" aria-label="Открыть подменю" aria-expanded="false">▾</button><div class="sub mega-grid"><div class="col"><a class="col-title" href="../../../catalog/programming/">Программирование</a><ul><li><a href="../../../catalog/programming/python/">Python</a></li><li><a href="../../../catalog/programming/csharp/">C#</a></li><li><a href="../../../catalog/programming/javascript/">JavaScript</a></li><li><a href="../../../catalog/programming/swift/">Swift</a></li><li><a href="../../../catalog/programming/web/">Web-разработка</a></li></ul></div><div class="col"><a class="col-title" href="../../../catalog/levels/">По уровню</a><ul><li><a href="../../../catalog/levels/beginner/">Начальный</a></li><li><a href="../../../catalog/levels/intermediate/">Средний</a></li><li><a href="../../../catalog/levels/advanced/">Продвинутый</a></li></ul></div><div class="col"><a class="col-title" href="../../../catalog/practice/">Практика</a><ul><li><a href="../../../catalog/practice/tasks/">Практические задания</a></li><li><a href="../../../catalog/practice/tests/">Тесты</a></li><li><a href="../../../catalog/practice/mini-projects/">Мини-проекты</a></li></ul></div><div class="col"><a class="col-title" href="../../../catalog/reference/">Справочник / Полезное</a><ul><li><a href="../../../catalog/reference/syntax/">Синтаксис языков</a></li><li><a href="../../../catalog/reference/examples/">Примеры кода</a></li><li><a href="../../../catalog/reference/errors/">Частые ошибки</a></li><li><a href="../../../catalog/reference/articles/">Статьи</a></li></ul></div></div></li><li class="has-sub"><a href="../../../about/">О нас</a><button class="sub-toggle" type="button" aria-label="Открыть подменю" aria-expanded="false">▾</button><ul class="sub"><li><a href="../../../about/project/">Описание проекта</a></li><li><a href="../../../about/goals/">Цели и задачи</a></li><li><a href="../../../about/authors/">Авторы материалов</a></li></ul></li><li><a href="../../../contacts/">Контакты</a></li><li><a href="../../../faq/">FAQ</a></li></ul></nav>
+  </div>
+</header>
+<main id="content">
+<div class="container">
+<nav class="crumbs" aria-label="Хлебные крошки"><ol><li><a href="../../../">Главная</a></li><li><a href="../../../catalog/">Каталог курсов</a></li><li><a href="../../../catalog/practice/">Практика</a></li><li aria-current="page">Практические задания</li></ol></nav>
+<h1>Практические задания по программированию</h1><p class="lead">Сначала решите задачу самостоятельно, затем сверьтесь с решением.</p><article class="task"><h3>Сумма цифр числа</h3><p><span class="badge">Python</span> <span class="badge badge-alt">Начальный</span></p><p>Введите целое число и выведите сумму его цифр. Например, для 1234 ответ — 10.</p><details><summary>Показать решение</summary><pre><code class="lang-python">n = int(input())
+print(sum(int(d) for d in str(abs(n))))</code></pre></details></article><article class="task"><h3>Чётные числа в диапазоне</h3><p><span class="badge">Python</span> <span class="badge badge-alt">Начальный</span></p><p>Выведите все чётные числа от 1 до N включительно, через пробел.</p><details><summary>Показать решение</summary><pre><code class="lang-python">n = int(input())
+print(*range(2, n + 1, 2))</code></pre></details></article><article class="task"><h3>Подсчёт слов в файле</h3><p><span class="badge">Python</span> <span class="badge badge-alt">Средний</span></p><p>Прочитайте текстовый файл и выведите пять самых частых слов с количеством повторов.</p><details><summary>Показать решение</summary><pre><code class="lang-python">from collections import Counter
+
+with open(&quot;text.txt&quot;, encoding=&quot;utf-8&quot;) as f:
+    words = f.read().lower().split()
+
+for word, count in Counter(words).most_common(5):
+    print(word, count)</code></pre></details></article><article class="task"><h3>Палиндром</h3><p><span class="badge">JavaScript</span> <span class="badge badge-alt">Начальный</span></p><p>Напишите функцию isPalindrome(s), которая проверяет, читается ли строка одинаково в обе стороны (без учёта регистра).</p><details><summary>Показать решение</summary><pre><code class="lang-javascript">function isPalindrome(s) {
+  const t = s.toLowerCase();
+  return t === [...t].reverse().join(&quot;&quot;);
+}
+console.log(isPalindrome(&quot;Шалаш&quot;)); // true</code></pre></details></article><article class="task"><h3>Фильтрация и сортировка</h3><p><span class="badge">JavaScript</span> <span class="badge badge-alt">Средний</span></p><p>Дан массив объектов {name, age}. Оставьте тех, кому от 18 лет, и отсортируйте по имени.</p><details><summary>Показать решение</summary><pre><code class="lang-javascript">const people = [{name: &quot;Олег&quot;, age: 17}, {name: &quot;Анна&quot;, age: 21}, {name: &quot;Борис&quot;, age: 30}];
+const adults = people
+  .filter(p =&gt; p.age &gt;= 18)
+  .sort((a, b) =&gt; a.name.localeCompare(b.name));
+console.log(adults);</code></pre></details></article><article class="task"><h3>FizzBuzz</h3><p><span class="badge">C#</span> <span class="badge badge-alt">Начальный</span></p><p>Выведите числа от 1 до 100. Для кратных 3 выведите Fizz, для кратных 5 — Buzz, для кратных обоим — FizzBuzz.</p><details><summary>Показать решение</summary><pre><code class="lang-csharp">for (int i = 1; i &lt;= 100; i++)
+{
+    if (i % 15 == 0) Console.WriteLine(&quot;FizzBuzz&quot;);
+    else if (i % 3 == 0) Console.WriteLine(&quot;Fizz&quot;);
+    else if (i % 5 == 0) Console.WriteLine(&quot;Buzz&quot;);
+    else Console.WriteLine(i);
+}</code></pre></details></article><article class="task"><h3>Факториал</h3><p><span class="badge">Swift</span> <span class="badge badge-alt">Начальный</span></p><p>Напишите функцию factorial(n), которая возвращает n!. Для n = 5 ответ — 120.</p><details><summary>Показать решение</summary><pre><code class="lang-swift">func factorial(_ n: Int) -&gt; Int {
+    n &lt;= 1 ? 1 : n * factorial(n - 1)
+}
+print(factorial(5))  // 120</code></pre></details></article><article class="task"><h3>Декоратор замера времени</h3><p><span class="badge">Python</span> <span class="badge badge-alt">Продвинутый</span></p><p>Напишите декоратор timed, который печатает время выполнения функции.</p><details><summary>Показать решение</summary><pre><code class="lang-python">import time
+from functools import wraps
+
+def timed(func):
+    @wraps(func)
+    def wrapper(*args, **kwargs):
+        start = time.perf_counter()
+        result = func(*args, **kwargs)
+        print(f&quot;{func.__name__}: {time.perf_counter() - start:.4f} c&quot;)
+        return result
+    return wrapper</code></pre></details></article>
+</div>
+</main>
+<footer class="site-footer">
+  <div class="container footer-row">
+    <div>
+      <strong>Кодстарт</strong>
+      <p>Образовательный ресурс по программированию: курсы, практика, тесты и справочник.</p>
+      <p class="muted">Учебный проект, выполненный в рамках лабораторной работы №2 (ТулГУ).</p>
+    </div>
+    <ul>
+      <li><a href="../../../catalog/">Каталог курсов</a></li>
+      <li><a href="../../../about/">О нас</a></li>
+      <li><a href="../../../contacts/">Контакты</a></li>
+      <li><a href="../../../faq/">FAQ</a></li>
+    </ul>
+    <ul>
+      <li><a href="../../../privacy/">Политика конфиденциальности</a></li>
+      <li><a href="../../../terms/">Пользовательское соглашение</a></li>
+      <li><a href="../../../sitemap/">Карта сайта</a></li>
+    </ul>
+  </div>
+</footer>
+<script src="../../../assets/site.js" defer></script>
+
+</body>
+</html>
